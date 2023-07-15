@@ -11,6 +11,7 @@ sudo apt update && sudo apt upgrade && sudo apt install git && sudo apt install 
 how to clone this github repo:
 
 git clone https://github.com/pitester12/2step-authentication/
+
 cd 2step-authentication
 
 how to run:
