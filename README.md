@@ -9,6 +9,7 @@ how to download:
 sudo apt update && sudo apt upgrade && sudo apt install git && sudo apt install python3 && sudo apt-get install python3-pip && pip install pyotp 
 
 how to clone this github repo:
+
 git clone https://github.com/pitester12/2step-authentication/
 cd 2step-authentication
 
