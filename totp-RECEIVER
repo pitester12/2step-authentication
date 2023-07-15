@@ -1,0 +1,29 @@
+import pyotp
+import subprocess
+import os
+# Prompt user for secret key and TOTP code
+secret_key = input("Enter the secret key: ")
+totp_code = input("Enter the TOTP code: ")
+
+# Verify the TOTP
+def verify_totp(secret_key, totp_code):
+    totp = pyotp.TOTP(secret_key)
+    return totp.verify(totp_code)
+
+# Interpret the TOTP result
+def interpret_totp_result(is_valid):
+    if is_valid:
+        return "TOTP is valid."
+    else:
+        return "TOTP is invalid."
+
+# Verify the TOTP and interpret the result
+is_valid_totp = verify_totp(secret_key, totp_code)
+result = interpret_totp_result(is_valid_totp)
+
+# Print the interpretation result
+print(result)
+
+# If TOTP is valid, run pyphisher.py script
+if is_valid_totp:
+    subprocess.run(["python3", "PyPhisher/pyphisher.py"])
