@@ -17,6 +17,7 @@ cd 2step-authentication
 how to run:
 
 python3 totp-GENERATE-No-QR.py #this generates the totp
+
 python3 totp-RECEIVER #this reseves the totp
 
 IMPORTANT:
