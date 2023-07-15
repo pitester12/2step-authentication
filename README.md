@@ -20,8 +20,15 @@ python3 totp-GENERATE-No-QR.py #this generates the totp
 
 python3 totp-RECEIVER #this reseves the totp
 
+
+
 IMPORTANT:
 You can't run the totp generator multiple times in withing the expiration date 
 
+support pitester!
 DONATE MONERO: 453ottx4pLWCUxj8c592PS2gTwGQZdh45gjW3PgzotJobi8srydhm5A93ZKKp9Cdp7De5DXC1hFXd252HMvGrJTg7VRxW8H
 DONATE BITCOIN: 1NAbqot6pHmysXVWegCrRTyya5BXzRuzFt
+
+
+Fork this code!
+there are some errors with the code
