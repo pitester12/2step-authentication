@@ -14,7 +14,7 @@ def generate_secret_key():
 def generate_totp(secret_key):
     totp = pyotp.TOTP(secret_key)
     otp = totp.now()
-    expiration = random.randint(60, 120)  # Random expiration between 1 and 2 minutes
+    expiration = random.randint(60, 120)  # Random expiration between 1 and 2 minutes you can edit this to be what ever you want just make sure its in seconds
     return otp, expiration
 
 # Generate a random secret key
