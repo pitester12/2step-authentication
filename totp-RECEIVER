@@ -26,4 +26,4 @@ print(result)
 
 # If TOTP is valid, run pyphisher.py script
 if is_valid_totp:
-    subprocess.run(["python3", "PyPhisher/pyphisher.py"])
+    subprocess.run(["echo Edit this script to run any script after the 2-step veification has been completed"])
